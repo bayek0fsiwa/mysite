@@ -30,9 +30,20 @@
         <v-icon>mdi-{{ `chevron-${miniVariant ? "right" : "left"}` }}</v-icon>
       </v-btn>
       <v-toolbar-title v-text="title" />
-      <!-- <v-spacer /> -->
+      <v-spacer />
+      <v-btn href="https://github.com/bayek0fsiwa" target="_blank">
+      <v-icon>notranslate mdi mdi-github theme--light</v-icon>
+      </v-btn>
+      <v-btn href="https://gitlab.com/bayek0fsiwa" target="_blank">
+      <v-icon>notranslate mdi mdi-gitlab theme--light</v-icon>
+      </v-btn>
+      <v-btn href="https://t.me/Diablo_Nemesis" target="_blank">
+      <v-icon>notranslate mdi mdi-telegram theme--light</v-icon>
+      </v-btn>
+      <v-btn href="https://twitter.com/HH_EE_RR_OO" target="_blank">
+      <v-icon>notranslate mdi mdi-twitter theme--light</v-icon>
+      </v-btn>
     </v-app-bar>
-
     <v-footer app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
