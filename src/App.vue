@@ -1,8 +1,9 @@
 <template>
-  <v-app>
+  <v-app dark>
     <Layout />
-
-    <router-view />
+    <v-content class="mx-4 mb-4">
+       <router-view />
+    </v-content> 
   </v-app>
 </template>
 
@@ -11,9 +12,7 @@ import Layout from './components/Layout';
 
 export default {
   name: 'App',
-
   components: { Layout },
-
   data: () => ({
     //
   }),

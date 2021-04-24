@@ -1,5 +1,5 @@
 <template>
-<v-app dark>
+  <div class="layout">
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -24,56 +24,41 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar
-      :clipped-left="clipped"
-      fixed
-      app
-    >
+    <v-app-bar :clipped-left="clipped" fixed app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn
-        icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
+      <v-btn icon @click.stop="miniVariant = !miniVariant">
+        <v-icon>mdi-{{ `chevron-${miniVariant ? "right" : "left"}` }}</v-icon>
       </v-btn>
       <v-toolbar-title v-text="title" />
-      <v-spacer />
+      <!-- <v-spacer /> -->
     </v-app-bar>
-    <v-main>
-      <v-container>
-        <nuxt />
-      </v-container>
-    </v-main>
-    <v-footer
-      :absolute="!fixed"
-      app
-    >
+
+    <v-footer app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
-  </v-app>
+  </div>
 </template>
 
 <script>
 export default {
-  data () {
+  data() {
     return {
-    //   clipped: false,
       drawer: false,
-      fixed: false,
+      fixed: true,
       items: [
         {
-          icon: 'mdi-apps',
-          title: 'Home',
-          to: '/'
+          icon: "mdi-apps",
+          title: "Home",
+          to: "/",
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Timeline',
-          to: '/timeline'
-        }
+          icon: "mdi-chart-bubble",
+          title: "Timeline",
+          to: "/timeline",
+        },
       ],
-      title: 'Hi, There!👀'
-    }
-  }
-}
+      title: "Hi, There!👀",
+    };
+  },
+};
 </script>
