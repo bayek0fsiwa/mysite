@@ -1,6 +1,6 @@
-# vkg
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4586819b-87f0-4b85-863f-0eea2008e2c5/deploy-status)](https://app.netlify.com/sites/vkg/deploys)
 
-## Project setup
+## setup
 ```
 yarn install
 ```
@@ -14,11 +14,10 @@ yarn serve
 ```
 yarn build
 ```
+# OR
 
-### Lints and fixes files
-```
-yarn lint
-```
+### Build Docker image
+`docker build -t portfolio .`
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Run
+`docker run portfolio`
