@@ -7,6 +7,11 @@
       <vue-typed-js :strings="['IT Administrator', 'Network Engineer']" :loop="true" @onComplete="doSmth()">
         <h2>Currently Working as a <span class="typing"></span>@HCL🏢</h2>
       </vue-typed-js>
+      <br>
+      <v-btn href="" target="_blank">
+      <v-icon>notranslate mdi mdi-file theme--light</v-icon>
+        Here's My CV
+      </v-btn>
     </v-container>
   </div>
 </template>
