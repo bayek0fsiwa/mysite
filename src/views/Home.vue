@@ -8,7 +8,7 @@
         <h2>Currently Working as a <span class="typing"></span>@HCL🏢</h2>
       </vue-typed-js>
       <br>
-      <v-btn href="" target="_blank">
+      <v-btn href="https://www.dropbox.com/s/h49i8jvkjasopxx/Vikas%20gupta.pdf?dl=1" target="_blank">
       <v-icon>notranslate mdi mdi-file theme--light</v-icon>
         Here's My CV
       </v-btn>
