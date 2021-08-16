@@ -1,14 +1,14 @@
 <template>
   <div class="home">
     <v-container>
-      <vue-typed-js :strings="['Developer🚀', 'Network Engineer', 'Gamer🕹']" :loop="true" @onComplete="doSmth()">
+      <vue-typed-js :strings="['Developer🚀', 'Upcoming DevOps Engineer', 'Gamer🕹']" :loop="true" @onComplete="doSmth()">
         <h2>I am a <span class="typing"></span></h2>
       </vue-typed-js>
-      <vue-typed-js :strings="['IT Administrator', 'Network Engineer']" :loop="true" @onComplete="doSmth()">
+      <vue-typed-js :strings="['System Administrator', 'Analyst']" :loop="true" @onComplete="doSmth()">
         <h2>Currently Working as a <span class="typing"></span>@HCL🏢</h2>
       </vue-typed-js>
       <br>
-      <v-btn href="https://www.dropbox.com/s/h49i8jvkjasopxx/Vikas%20gupta.pdf?dl=1" target="_blank">
+      <v-btn href="https://www.dropbox.com/s/jhsse42j470bv3s/VikasKrGupta_Resume.pdf?dl=1" target="_blank">
       <v-icon>notranslate mdi mdi-file theme--light</v-icon>
         Here's My CV
       </v-btn>
